@@ -7,12 +7,14 @@ const style = {
   padding: "8px"
 };
 
-export const Child1 = () => {
+export const Child1 = (props) => {
   console.log("Child1　レンダリング");
 
+  const { onClickReset } = props;
   return (
     <div style={style}>
       <p>Child1</p>
+      <button onClick={onClickReset}>リセット</button>
       <Child2 />
       <Child3 />
     </div>
