@@ -4,7 +4,7 @@ const style = {
 };
 
 export const Child2 = () => {
-  console.log("Child12レンダリング");
+  console.log("Child2レンダリング");
 
   return (
     <div style={style}>
